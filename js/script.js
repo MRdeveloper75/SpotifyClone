@@ -99,7 +99,7 @@ const playMusic = (track, pause = false) => {
 
 async function displayAlbums() {
     let cardContainer = document.querySelector(".cardContainer");
-    let folders = ["Angry_(mood)", "Bright(mood)", "Chill_(mood)", "cs", "Dark_(mood)", "Diljit", "Funky_(mood)", "Karan_aujla", "Love_(mood)", "ncs", "Uplifting_(mood)", "kpop demon hunter","Arijit singh","Sad songs","Pakistani ost"];
+    let folders = ["Angry_(mood)", "Bright(mood)", "Chill_(mood)", "cs", "Dark_(mood)", "Diljit", "Funky_(mood)", "Karan_aujla", "Love_(mood)", "ncs", "Uplifting_(mood)", "kpop_demon_hunter","Arijit_singh","Sad_songs","Pakistani_ost"];
 
     cardContainer.innerHTML = "";
     for (const folder of folders) {
@@ -116,11 +116,9 @@ async function displayAlbums() {
 
             cardContainer.innerHTML += `<div data-folder="${folder}" class="card">
                 <div class="play">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org">
-                        <path d="M5 20V4L19 12L5 20Z" fill="#000" />
-                    </svg>
+                    <img class="play_music" src="img/play_music.svg" alt="">
                 </div>
-                <img src="/songs/${folder}/cover.jpg" onerror="this.src='img/logo.svg'" alt="">
+                <img class="cover" src="/songs/${folder}/cover.jpg" onerror="this.src='img/logo.svg'" alt="">
                 <h2>${title}</h2>
                 <p>${desc}</p>
             </div>`;

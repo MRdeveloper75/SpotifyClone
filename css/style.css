@@ -3,6 +3,7 @@
 
 :root {
     --a: 0;
+    --b: 30px;
 }
 
 * {
@@ -120,7 +121,7 @@ body {
     flex-direction: column;
 }
 
-.card img {
+.card .cover {
     width: 100%;
     aspect-ratio: 1/1;
     /* Yeh image ko square rakhega chahe original size jo bhi ho */
@@ -129,6 +130,7 @@ body {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
 
 .card h2 {
     font-size: 16px;
@@ -145,43 +147,20 @@ body {
     padding-top: 5px;
 }
 
-/* .card {
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #252525;
-    position: relative;
-    transition: all .9s;
-}
-.card:hover{
+.card:hover {
     background-color: rgb(105, 103, 103);
     cursor: pointer;
     --a: 1;
+    --b: 100px;
 }
 
-.card>* {
-    padding-top: 10px;
-}
-
-.card img {
-    width: 100%;
-    /* object-fit: contain; */
-
-
-.play {
-    width: 28px;
-    height: 28px;
-    background-color: #1fdf64;
-    border-radius: 50%;
-    padding: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.play_music {
     position: absolute;
-    bottom: 88px;
-    right: 17px;
+    right: 16px;
+    width: 30px;
+    bottom: var(--b);
     opacity: var(--a);
-    transition: all 1s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .buttons>* {
@@ -433,7 +412,7 @@ body {
 
     .abovebar {
         flex-direction: column;
-        gap: 23px;
+        gap: 5px;
         align-items: center;
     }
 
