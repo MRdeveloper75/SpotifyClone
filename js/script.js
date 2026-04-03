@@ -37,7 +37,7 @@ async function getSongs(folder) {
                 <img class="invert" width="34" src="img/music.svg" alt="">
                 <div class="info">
                     <div>${cleanName}</div>
-                    <div>Artist</div>
+                    <div>Mahnoor</div>
                 </div>
                 <div class="playnow">
                     <span>Play Now</span>
